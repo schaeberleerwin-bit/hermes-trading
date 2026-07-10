@@ -1,0 +1,27 @@
+{
+  "ask": 1783.8907,
+  "asset": "ETH/USDT:USDT",
+  "bid": 1773.2193,
+  "equity": 10981.05372025217,
+  "inventory": 0.0,
+  "last_trade": {
+    "asset": "ETH/USDT:USDT",
+    "entry": 1783.0682,
+    "equity_after": 10981.05372025217,
+    "equity_before": 10967.173979252033,
+    "exit": 1778.5549999999998,
+    "market_regime": "neutral",
+    "news_sentiment": 0.0,
+    "onchain_netflow_z": 0.0,
+    "pnl": 13.879741,
+    "qty": 0.014020776098188505,
+    "return_pct": 0.126557,
+    "side": "sell",
+    "strategy_version": "430",
+    "ts": "2026-07-05T19:30:32.074116+00:00"
+  },
+  "mid": 1778.5549999999998,
+  "open_position": null,
+  "ts": "2026-07-05T19:30:32.074116+00:00",
+  "volatility": 0.003422165066751734
+}

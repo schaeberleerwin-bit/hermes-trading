@@ -1,0 +1,110 @@
+{
+  "cash": 6478.999879276386,
+  "start_capital": 10000.0,
+  "positions": {
+    "BNY": {
+      "shares": 6,
+      "avg_price": 131.34247543227957,
+      "sector": "Finanzen",
+      "name": "BNY Mellon"
+    },
+    "TMO": {
+      "shares": 1,
+      "avg_price": 446.26174174747575,
+      "sector": "Gesundheit",
+      "name": "Thermo Fisher Scientific"
+    },
+    "UPS": {
+      "shares": 8,
+      "avg_price": 96.17551704000289,
+      "sector": "Industrie",
+      "name": "United Parcel Service"
+    },
+    "GDDY": {
+      "shares": 10,
+      "avg_price": 76.01137376141833,
+      "sector": "Technologie",
+      "name": "GoDaddy"
+    },
+    "CHD": {
+      "shares": 9,
+      "avg_price": 84.1295169386949,
+      "sector": "Konsum defensiv",
+      "name": "Church & Dwight"
+    }
+  },
+  "history": [
+    {
+      "datum": "2026-07-09T11:49:55",
+      "aktion": "Kauf",
+      "symbol": "BNY",
+      "name": "BNY Mellon",
+      "stueck": 6,
+      "preis": 131.34247543227957,
+      "betrag": -788.0548525936774
+    },
+    {
+      "datum": "2026-07-09T11:50:28",
+      "aktion": "Kauf",
+      "symbol": "BNY",
+      "name": "BNY Mellon",
+      "stueck": 6,
+      "preis": 131.34247543227957,
+      "betrag": -788.0548525936774
+    },
+    {
+      "datum": "2026-07-09T11:50:28",
+      "aktion": "Verkauf",
+      "symbol": "BNY",
+      "name": "BNY Mellon",
+      "stueck": 12,
+      "preis": 131.34247543227957,
+      "betrag": 1576.1097051873548
+    },
+    {
+      "datum": "2026-07-09T12:02:08",
+      "aktion": "Kauf",
+      "symbol": "BNY",
+      "name": "BNY Mellon",
+      "stueck": 6,
+      "preis": 131.34247543227957,
+      "betrag": -788.0548525936774
+    },
+    {
+      "datum": "2026-07-09T12:02:09",
+      "aktion": "Kauf",
+      "symbol": "TMO",
+      "name": "Thermo Fisher Scientific",
+      "stueck": 1,
+      "preis": 446.26174174747575,
+      "betrag": -446.26174174747575
+    },
+    {
+      "datum": "2026-07-09T12:02:10",
+      "aktion": "Kauf",
+      "symbol": "UPS",
+      "name": "United Parcel Service",
+      "stueck": 8,
+      "preis": 96.17551704000289,
+      "betrag": -769.4041363200231
+    },
+    {
+      "datum": "2026-07-09T12:02:10",
+      "aktion": "Kauf",
+      "symbol": "GDDY",
+      "name": "GoDaddy",
+      "stueck": 10,
+      "preis": 76.01137376141833,
+      "betrag": -760.1137376141833
+    },
+    {
+      "datum": "2026-07-09T12:02:11",
+      "aktion": "Kauf",
+      "symbol": "CHD",
+      "name": "Church & Dwight",
+      "stueck": 9,
+      "preis": 84.1295169386949,
+      "betrag": -757.1656524482541
+    }
+  ]
+}

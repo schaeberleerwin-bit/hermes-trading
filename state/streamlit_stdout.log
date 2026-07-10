@@ -1,0 +1,75 @@
+2026-07-09 11:51:04.408 Uvicorn server started on 0.0.0.0:8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.178.48:8501
+  External URL: http://79.230.79.106:8501
+
++------------------------- Traceback (most recent call last) --------------------------+
+| C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\runtime\scriptrunner |
+| \exec_code.py:129 in exec_func_with_error_handling                                   |
+|                                                                                      |
+| C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\runtime\scriptrunner |
+| \script_runner.py:787 in code_to_exec                                                |
+|                                                                                      |
+| C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\runtime\scriptrunner |
+| \script_runner.py:171 in _mpa_v1                                                     |
+|                                                                                      |
+| C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\navigation\page.py:4 |
+| 90 in run                                                                            |
+|                                                                                      |
+| C:\Users\schae\hermes-trading\scripts\pages\1_Signal.py:12 in <module>               |
+|                                                                                      |
+|     9 )                                                                              |
+|    10                                                                                |
+|    11 st.set_page_config(page_title="Signal", page_icon="2026-07-10 06:35:42.269 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 787, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 171, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\schae\hermes-trading\scripts\pages\1_Signal.py", line 12, in <module>
+    settings = render_settings()
+  File "C:\Users\schae\hermes-trading\scripts\sector_rotation_lib.py", line 67, in render_settings
+    date_range = st.date_input(
+        "Backtest-Zeitraum", value=default_range,
+        min_value=today.replace(year=today.year - 20), max_value=today, key="date_range",
+    )
+  File "C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\runtime\metrics_util.py", line 698, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\elements\widgets\time_widgets.py", line 1717, in date_input
+    return self._date_input(
+           ~~~~~~~~~~~~~~~~^
+        label=label,
+        ^^^^^^^^^^^^
+    ...<13 lines>...
+        ctx=ctx,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\elements\widgets\time_widgets.py", line 1814, in _date_input
+    parsed_values = _DateInputValues.from_raw_values(
+        value=value,
+        min_value=min_value,
+        max_value=max_value,
+    )
+  File "C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\elements\widgets\time_widgets.py", line 407, in from_raw_values
+    return cls(
+        value=parsed_value,
+    ...<2 lines>...
+        max=parsed_max,
+    )
+  File "<string>", line 7, in __init__
+  File "C:\Users\schae\hermes-trading\.venv\Lib\site-packages\streamlit\elements\widgets\time_widgets.py", line 426, in __post_init__
+    raise StreamlitAPIException(
+    ...<3 lines>...
+    )
+streamlit.errors.StreamlitAPIException: The default `value` of [datetime.date(2006, 7, 9), datetime.date(2026, 7, 9)] must lie between the `min_value` of 2006-07-10 and the `max_value` of 2026-07-10, inclusively.

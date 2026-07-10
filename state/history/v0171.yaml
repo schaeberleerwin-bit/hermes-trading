@@ -1,0 +1,29 @@
+version: '171'
+source_strategy: C:/Users/schae/Downloads/Roboquant-Crypto-Market-Maker-Bot-master/Roboquant-Crypto-Market-Maker-Bot-master/dist/market_maker_bot.py
+exchange:
+  name: bybit
+  testnet: false
+trading:
+  symbol: ETH/USDT:USDT
+  leverage: 5
+  order_size_type: percentage
+  order_size_percent: 0.2
+  order_size: 0.01
+strategy:
+  model: avellaneda_stoikov_market_maker
+  gamma: 1.5
+  k: 2.5
+  time_horizon: 1.0
+  sigma_lookback: 120
+  update_frequency: 120
+  min_spread: 0.004
+  max_spread_percent: 0.0075
+  max_quote_distance_percent: 0.005
+risk:
+  max_inventory_usd: 1000
+  max_position_size_usd: 150
+  stop_loss_percent: 0.05
+  daily_loss_limit_usd: 200
+paper:
+  starting_equity: 10000.0
+  max_holding_minutes: 15
